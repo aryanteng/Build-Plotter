@@ -8,7 +8,7 @@ def generate_bar_graphs(file_path):
 
     with open(file_path, "r") as file:
         lines = file.readlines()
-        for line in lines[1:]:
+        for line in lines:
             currLine = line.strip().split()
             page_names.append(currLine[2])
             if currLine[4] == "B":
